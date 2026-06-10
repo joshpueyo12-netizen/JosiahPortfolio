@@ -132,4 +132,20 @@ function RootComponent() {
       <Outlet />
     </QueryClientProvider>
   );
+
+
+  import { useEffect } from "react";
+
+export function RouteComponent() {
+  useEffect(() => {
+    // Replace with your actual GitHub link
+    window.location.replace(https://github.com/joshpueyo12-netizen/JosiahPortfolio.git);
+  }, []);
+
+  return (
+    <div className="flex h-screen items-center justify-center">
+      <p>Redirecting to GitHub repository...</p>
+    </div>
+  );
+}
 }
