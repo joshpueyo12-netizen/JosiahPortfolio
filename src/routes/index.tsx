@@ -309,7 +309,7 @@ function Index() {
         </div>
       </section>
 
-      {/* Tools */}
+      {/* Proof */}
       <section id="proof" className="border-t border-border/60">
         <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
           <div className="max-w-2xl">
