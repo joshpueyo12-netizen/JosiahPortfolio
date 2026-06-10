@@ -147,6 +147,9 @@ function Index() {
             Aspiring copywriter, creative writer, and AI-enhanced content creator.
             Turning ideas into clear, compelling, and conversion-driven words.
           </p>
+          <p className="mt-2 text-sm text-muted-foreground animate-fade-up">
+            Based in the Philippines.
+          </p>
           <div className="mt-10 flex flex-wrap gap-3 animate-fade-up">
             <a
               href="#proof"
