@@ -10,7 +10,6 @@
     "postbuild": "cp _redirects dist/",
     "preview": "vite preview",
     "lint": "eslint .",
-    "start": "node dist/server/index.js",
     "format": "prettier --write ."
   },
   "dependencies": {
