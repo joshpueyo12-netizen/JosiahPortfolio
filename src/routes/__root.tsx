@@ -126,7 +126,7 @@ function RootShell({ children }: { children: ReactNode }) {
 export function RouteComponent() {
   useEffect(() => {
     // Replace with your actual GitHub link
-    window.location.replace("https://github.com/joshpueyo12-netizen/JosiahPortfolio.git");
+    window.location.replace("https://github.com/joshpueyo12-netizen/JosiahPortfolio");
   }, []);
 
   return (
