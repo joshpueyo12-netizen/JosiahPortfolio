@@ -334,8 +334,12 @@ function Index() {
             </p>
             <div className="mt-10 space-y-2 text-sm">
               <p className="opacity-60">Email</p>
-              <a href="mailto:hello@josiahpueyo.com" className="text-lg hover:text-accent transition">
-                hello@josiahpueyo.com
+              <a href="mailto:joshpueyo12@gmail.com" className="text-lg hover:text-accent transition">
+                joshpueyo12@gmail.com
+              </a>
+              <p className="opacity-60 mt-4">Phone</p>
+              <a href="tel:+639222131485" className="text-lg hover:text-accent transition">
+                09222131485
               </a>
               <div className="flex gap-5 pt-6 text-sm opacity-75">
                 <a href="#" className="hover:text-accent transition">LinkedIn</a>
@@ -352,7 +356,7 @@ function Index() {
               e.preventDefault();
               const form = e.currentTarget;
               const data = new FormData(form);
-              window.location.href = `mailto:hello@josiahpueyo.com?subject=Project from ${encodeURIComponent(
+              window.location.href = `mailto:joshpueyo12@gmail.com?subject=Project from ${encodeURIComponent(
                 String(data.get("name") ?? ""),
               )}&body=${encodeURIComponent(String(data.get("message") ?? ""))}`;
             }}
