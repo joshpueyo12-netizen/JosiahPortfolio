@@ -1,5 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
+import project1 from "@/assets/project-1.jpeg.asset.json";
+import project2 from "@/assets/project-2.jpeg.asset.json";
+import project3 from "@/assets/project-3.jpeg.asset.json";
+import epjPost from "@/assets/epj-post.jpeg.asset.json";
+import thrift1 from "@/assets/thrift-1.jpeg.asset.json";
+import thrift2 from "@/assets/thrift-2.jpeg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -66,10 +72,10 @@ const tools = [
 const experience = [
   {
     role: "Independent Online Seller",
-    org: "Facebook Thrift Shop",
+    org: "Sanina Collection — Facebook & TikTok Thrift Shop",
     period: "Self-run",
     points: [
-      "Wrote product captions and promo posts that turned scrolls into sales.",
+      "Built and run my own thrift brand across Facebook and TikTok — captions, hooks, and short-form copy.",
       "Handled customer DMs with clear, persuasive replies.",
       "Tested tone, hooks, and offers — learned what makes people click 'mine.'",
     ],
@@ -85,6 +91,16 @@ const experience = [
     ],
   },
   {
+    role: "Marketing & Client Acquisition",
+    org: "EPJ Construction Services",
+    period: "Side role",
+    points: [
+      "Wrote and posted promotional content on social media for the family construction business.",
+      "Personally secured 3 paying clients through online posts — construction and office fit-out projects.",
+      "Proved that the right words, posted in the right place, bring in real revenue.",
+    ],
+  },
+  {
     role: "BS Electrical Engineering",
     org: "Pamantasan ng Lungsod ng Valenzuela",
     period: "Ongoing",
@@ -93,6 +109,18 @@ const experience = [
       "Trained to think in systems — useful for structuring persuasive copy.",
     ],
   },
+];
+
+const constructionProjects = [
+  { src: project1.url, title: "Office Fit-out", note: "Custom millwork interior — secured via online inquiry." },
+  { src: project2.url, title: "Retail Interior", note: "Marble & paneling fit-out — closed through a social post." },
+  { src: project3.url, title: "Residential Build", note: "Two-storey new build — client found us online." },
+];
+
+const thriftShots = [
+  { src: thrift1.url, alt: "Sanina Collection Facebook post — premium thrifted cardigans" },
+  { src: thrift2.url, alt: "Curated thrifted apparel — brand drop" },
+  { src: epjPost.url, alt: "EPJ Construction promotional post" },
 ];
 
 function Index() {
@@ -117,6 +145,7 @@ function Index() {
             <a href="#work" className="hover:text-foreground transition">Work</a>
             <a href="#skills" className="hover:text-foreground transition">Skills</a>
             <a href="#experience" className="hover:text-foreground transition">Experience</a>
+            <a href="#proof" className="hover:text-foreground transition">Proof</a>
             <a href="#contact" className="hover:text-foreground transition">Contact</a>
           </nav>
           <button
@@ -179,8 +208,11 @@ function Index() {
             <p>
               My background is in electrical engineering, which means I've spent years writing
               proposals, quotations, and technical documents that had to be clear or someone lost
-              money. I've also run a small Facebook thrift shop, where I learned what makes a
-              caption stop the scroll.
+              money. I also run my own thrift shop — <span className="text-accent">Sanina Collection</span> —
+              on Facebook and TikTok, where I learned what makes a caption stop the scroll. And
+              while helping out at our family construction business, I personally <span className="text-accent">closed
+              three clients</span> through online posts alone — proof that copy can move more than
+              just feeds.
             </p>
             <p>
               I use AI tools every day — not to replace the craft, but to draft faster, research
@@ -278,8 +310,61 @@ function Index() {
         </div>
       </section>
 
+      {/* Proof */}
+      <section id="proof" className="border-t border-border/60">
+        <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
+          <div className="max-w-2xl">
+            <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Proof</p>
+            <h2 className="mt-4 font-serif text-3xl md:text-5xl">Words that closed deals.</h2>
+            <p className="mt-4 text-muted-foreground">
+              Three construction and office fit-out projects below — all secured through online
+              posts I wrote and published. Plus a peek at the thrift shop I built from scratch on
+              Facebook and TikTok.
+            </p>
+          </div>
+
+          <div className="mt-14">
+            <p className="text-xs uppercase tracking-[0.2em] text-accent">Clients secured online · EPJ Construction</p>
+            <div className="mt-6 grid md:grid-cols-3 gap-6">
+              {constructionProjects.map((p) => (
+                <figure key={p.title} className="group">
+                  <div className="aspect-[4/3] overflow-hidden rounded-2xl border border-border/60 bg-muted">
+                    <img
+                      src={p.src}
+                      alt={p.title}
+                      loading="lazy"
+                      className="h-full w-full object-cover group-hover:scale-[1.03] transition duration-500"
+                    />
+                  </div>
+                  <figcaption className="mt-3">
+                    <p className="font-serif text-lg">{p.title}</p>
+                    <p className="text-sm text-muted-foreground">{p.note}</p>
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-20">
+            <p className="text-xs uppercase tracking-[0.2em] text-accent">Sanina Collection · Facebook & TikTok</p>
+            <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {thriftShots.map((t) => (
+                <div key={t.src} className="aspect-[3/4] overflow-hidden rounded-2xl border border-border/60 bg-muted">
+                  <img
+                    src={t.src}
+                    alt={t.alt}
+                    loading="lazy"
+                    className="h-full w-full object-cover hover:scale-[1.03] transition duration-500"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Tools */}
-      <section className="border-t border-border/60">
+      <section className="border-t border-border/60 bg-muted/40">
         <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
           <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Tools</p>
           <h2 className="mt-4 font-serif text-3xl md:text-4xl">My stack, in plain terms.</h2>
@@ -318,6 +403,7 @@ function Index() {
               </a>
               <div className="flex gap-5 pt-6 text-sm opacity-75">
                 <a href="#" className="hover:text-accent transition">LinkedIn</a>
+                <a href="https://www.tiktok.com/@saninacollection" target="_blank" rel="noreferrer" className="hover:text-accent transition">TikTok</a>
                 <a href="#" className="hover:text-accent transition">Twitter / X</a>
                 <a href="#" className="hover:text-accent transition">Instagram</a>
               </div>
