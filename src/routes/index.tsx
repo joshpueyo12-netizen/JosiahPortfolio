@@ -1,5 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
+import project1 from "@/assets/project-1.jpeg.asset.json";
+import project2 from "@/assets/project-2.jpeg.asset.json";
+import project3 from "@/assets/project-3.jpeg.asset.json";
+import epjPost from "@/assets/epj-post.jpeg.asset.json";
+import thrift1 from "@/assets/thrift-1.jpeg.asset.json";
+import thrift2 from "@/assets/thrift-2.jpeg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -66,10 +72,10 @@ const tools = [
 const experience = [
   {
     role: "Independent Online Seller",
-    org: "Facebook Thrift Shop",
+    org: "Sanina Collection — Facebook & TikTok Thrift Shop",
     period: "Self-run",
     points: [
-      "Wrote product captions and promo posts that turned scrolls into sales.",
+      "Built and run my own thrift brand across Facebook and TikTok — captions, hooks, and short-form copy.",
       "Handled customer DMs with clear, persuasive replies.",
       "Tested tone, hooks, and offers — learned what makes people click 'mine.'",
     ],
@@ -85,6 +91,16 @@ const experience = [
     ],
   },
   {
+    role: "Marketing & Client Acquisition",
+    org: "EPJ Construction Services",
+    period: "Side role",
+    points: [
+      "Wrote and posted promotional content on social media for the family construction business.",
+      "Personally secured 3 paying clients through online posts — construction and office fit-out projects.",
+      "Proved that the right words, posted in the right place, bring in real revenue.",
+    ],
+  },
+  {
     role: "BS Electrical Engineering",
     org: "Pamantasan ng Lungsod ng Valenzuela",
     period: "Ongoing",
@@ -93,6 +109,18 @@ const experience = [
       "Trained to think in systems — useful for structuring persuasive copy.",
     ],
   },
+];
+
+const constructionProjects = [
+  { src: project1.url, title: "Office Fit-out", note: "Custom millwork interior — secured via online inquiry." },
+  { src: project2.url, title: "Retail Interior", note: "Marble & paneling fit-out — closed through a social post." },
+  { src: project3.url, title: "Residential Build", note: "Two-storey new build — client found us online." },
+];
+
+const thriftShots = [
+  { src: thrift1.url, alt: "Sanina Collection Facebook post — premium thrifted cardigans" },
+  { src: thrift2.url, alt: "Curated thrifted apparel — brand drop" },
+  { src: epjPost.url, alt: "EPJ Construction promotional post" },
 ];
 
 function Index() {
