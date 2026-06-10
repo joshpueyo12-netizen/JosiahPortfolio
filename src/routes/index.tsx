@@ -207,8 +207,11 @@ function Index() {
             <p>
               My background is in electrical engineering, which means I've spent years writing
               proposals, quotations, and technical documents that had to be clear or someone lost
-              money. I've also run a small Facebook thrift shop, where I learned what makes a
-              caption stop the scroll.
+              money. I also run my own thrift shop — <span className="text-accent">Sanina Collection</span> —
+              on Facebook and TikTok, where I learned what makes a caption stop the scroll. And
+              while helping out at our family construction business, I personally <span className="text-accent">closed
+              three clients</span> through online posts alone — proof that copy can move more than
+              just feeds.
             </p>
             <p>
               I use AI tools every day — not to replace the craft, but to draft faster, research
