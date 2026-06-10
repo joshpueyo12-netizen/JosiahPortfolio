@@ -133,9 +133,6 @@ function RootComponent() {
     </QueryClientProvider>
   );
 
-
-  import { useEffect } from "react";
-
 export function RouteComponent() {
   useEffect(() => {
     // Replace with your actual GitHub link
