@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Josiah Pueyo" },
+      { name: "description", content: "Josiah Pueyo Copy is a modern portfolio website showcasing a beginner copywriter's skills and adaptability." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Josiah Pueyo" },
+      { property: "og:description", content: "Josiah Pueyo Copy is a modern portfolio website showcasing a beginner copywriter's skills and adaptability." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Josiah Pueyo" },
+      { name: "twitter:description", content: "Josiah Pueyo Copy is a modern portfolio website showcasing a beginner copywriter's skills and adaptability." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b37fa81e-5c40-433c-8e55-28ef3de2bcfb/id-preview-ca3a8714--d4378db1-6698-457a-883a-d17f2439d245.lovable.app-1781074176571.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/b37fa81e-5c40-433c-8e55-28ef3de2bcfb/id-preview-ca3a8714--d4378db1-6698-457a-883a-d17f2439d245.lovable.app-1781074176571.png" },
     ],
     links: [
       {
