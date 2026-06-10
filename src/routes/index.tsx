@@ -145,6 +145,7 @@ function Index() {
             <a href="#work" className="hover:text-foreground transition">Work</a>
             <a href="#skills" className="hover:text-foreground transition">Skills</a>
             <a href="#experience" className="hover:text-foreground transition">Experience</a>
+            <a href="#proof" className="hover:text-foreground transition">Proof</a>
             <a href="#contact" className="hover:text-foreground transition">Contact</a>
           </nav>
           <button
@@ -402,6 +403,7 @@ function Index() {
               </a>
               <div className="flex gap-5 pt-6 text-sm opacity-75">
                 <a href="#" className="hover:text-accent transition">LinkedIn</a>
+                <a href="https://www.tiktok.com/@saninacollection" target="_blank" rel="noreferrer" className="hover:text-accent transition">TikTok</a>
                 <a href="#" className="hover:text-accent transition">Twitter / X</a>
                 <a href="#" className="hover:text-accent transition">Instagram</a>
               </div>
