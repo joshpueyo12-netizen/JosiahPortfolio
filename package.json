@@ -88,6 +88,6 @@
 
   "scripts": {
   "start": "node dist/server/index.js"
-},
+}
 }
 
