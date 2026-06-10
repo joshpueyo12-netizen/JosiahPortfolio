@@ -30,33 +30,6 @@ const skills = [
   { name: "Client Communication", level: "Honest & responsive" },
 ];
 
-const samples = [
-  {
-    type: "Product Description",
-    title: "Minimalist Ceramic Mug",
-    body: "Made for slow mornings. This hand-finished ceramic mug holds 12oz of whatever keeps you human — coffee, matcha, or that third refill you swore you wouldn't have. Weighted just right, glazed to last, and quietly beautiful on any shelf.",
-  },
-  {
-    type: "Social Media Ad",
-    title: "Skincare Brand — IG Caption",
-    body: "Your skin doesn't need ten steps. It needs the right three. Meet the routine that took us two years to simplify — and thirty seconds to apply. Tap to try it for ₱0 today.",
-  },
-  {
-    type: "Landing Page Headlines",
-    title: "SaaS — Project Tool",
-    body: "Stop managing tools. Start finishing work. / The fastest way from idea to launched. / Built for small teams that ship.",
-  },
-  {
-    type: "Email Marketing",
-    title: "Welcome Email — Online Course",
-    body: "Hey — glad you're in. Most people who sign up never open lesson one. You're not most people (you opened this, after all). Here's your first lesson, plus a small dare: finish it before tomorrow. I'll be here when you do.",
-  },
-  {
-    type: "Facebook Shop Caption",
-    title: "Thrifted Denim Jacket",
-    body: "Pre-loved, still loud. Vintage denim with the kind of fade you can't fake — only one in stock, and it's already someone's favorite. DM 'mine' before it's gone.",
-  },
-];
 
 const tools = [
   { name: "ChatGPT", note: "Drafting & ideation" },
@@ -142,9 +115,9 @@ function Index() {
           </a>
           <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
             <a href="#about" className="hover:text-foreground transition">About</a>
-            <a href="#work" className="hover:text-foreground transition">Work</a>
             <a href="#skills" className="hover:text-foreground transition">Skills</a>
             <a href="#experience" className="hover:text-foreground transition">Experience</a>
+            <a href="#proof" className="hover:text-foreground transition">Proof</a>
             <a href="#proof" className="hover:text-foreground transition">Proof</a>
             <a href="#contact" className="hover:text-foreground transition">Contact</a>
           </nav>
@@ -176,10 +149,10 @@ function Index() {
           </p>
           <div className="mt-10 flex flex-wrap gap-3 animate-fade-up">
             <a
-              href="#work"
+              href="#proof"
               className="inline-flex items-center gap-2 rounded-full bg-foreground text-background px-6 py-3 text-sm font-medium hover:opacity-90 transition"
             >
-              View my work →
+              See the proof →
             </a>
             <a
               href="#contact"
@@ -246,43 +219,6 @@ function Index() {
         </div>
       </section>
 
-      {/* Work / Samples */}
-      <section id="work" className="border-t border-border/60">
-        <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
-          <div className="max-w-2xl">
-            <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Selected work</p>
-            <h2 className="mt-4 font-serif text-3xl md:text-5xl">Sample copy, real practice.</h2>
-            <p className="mt-4 text-muted-foreground">
-              Spec pieces written to show range — voice, structure, and the ability to write for the
-              click, not just the page.
-            </p>
-          </div>
-
-          <div className="mt-16 space-y-px bg-border/60 border border-border/60 rounded-2xl overflow-hidden">
-            {samples.map((s, i) => (
-              <article
-                key={s.title}
-                className="bg-background p-8 md:p-10 grid md:grid-cols-12 gap-6 hover:bg-accent/5 transition group"
-              >
-                <div className="md:col-span-3">
-                  <p className="text-xs text-muted-foreground tabular-nums">
-                    {String(i + 1).padStart(2, "0")} / {String(samples.length).padStart(2, "0")}
-                  </p>
-                  <p className="mt-2 text-xs uppercase tracking-[0.2em] text-accent">{s.type}</p>
-                </div>
-                <div className="md:col-span-9">
-                  <h3 className="font-serif text-2xl md:text-3xl group-hover:text-accent transition">
-                    {s.title}
-                  </h3>
-                  <p className="mt-4 text-foreground/85 leading-relaxed text-lg">{s.body}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Experience */}
       <section id="experience" className="border-t border-border/60 bg-muted/40">
         <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
           <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Experience</p>
