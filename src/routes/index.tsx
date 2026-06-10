@@ -310,7 +310,60 @@ function Index() {
       </section>
 
       {/* Tools */}
-      <section className="border-t border-border/60">
+      <section id="proof" className="border-t border-border/60">
+        <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
+          <div className="max-w-2xl">
+            <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Proof</p>
+            <h2 className="mt-4 font-serif text-3xl md:text-5xl">Words that closed deals.</h2>
+            <p className="mt-4 text-muted-foreground">
+              Three construction and office fit-out projects below — all secured through online
+              posts I wrote and published. Plus a peek at the thrift shop I built from scratch on
+              Facebook and TikTok.
+            </p>
+          </div>
+
+          <div className="mt-14">
+            <p className="text-xs uppercase tracking-[0.2em] text-accent">Clients secured online · EPJ Construction</p>
+            <div className="mt-6 grid md:grid-cols-3 gap-6">
+              {constructionProjects.map((p) => (
+                <figure key={p.title} className="group">
+                  <div className="aspect-[4/3] overflow-hidden rounded-2xl border border-border/60 bg-muted">
+                    <img
+                      src={p.src}
+                      alt={p.title}
+                      loading="lazy"
+                      className="h-full w-full object-cover group-hover:scale-[1.03] transition duration-500"
+                    />
+                  </div>
+                  <figcaption className="mt-3">
+                    <p className="font-serif text-lg">{p.title}</p>
+                    <p className="text-sm text-muted-foreground">{p.note}</p>
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-20">
+            <p className="text-xs uppercase tracking-[0.2em] text-accent">Sanina Collection · Facebook & TikTok</p>
+            <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {thriftShots.map((t) => (
+                <div key={t.src} className="aspect-[3/4] overflow-hidden rounded-2xl border border-border/60 bg-muted">
+                  <img
+                    src={t.src}
+                    alt={t.alt}
+                    loading="lazy"
+                    className="h-full w-full object-cover hover:scale-[1.03] transition duration-500"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Tools */}
+      <section className="border-t border-border/60 bg-muted/40">
         <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
           <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Tools</p>
           <h2 className="mt-4 font-serif text-3xl md:text-4xl">My stack, in plain terms.</h2>
