@@ -5,11 +5,6 @@ export default defineConfig({
     server: { entry: "server" },
   },
   nitro: {
-    publicAssets: [
-      {
-        dir: "../client",
-        baseURL: "/"
-      }
-    ]
+    preset: "node-server",
   }
 });
