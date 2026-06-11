@@ -13,7 +13,7 @@ export const Route = createFileRoute("/")({
       { title: "Josiah Pueyo — Aspiring Copywriter & AI-Enhanced Content Creator" },
       { name: "description", content: "Portfolio of Josiah Pueyo — beginner copywriter turning ideas into clear, compelling, and conversion-driven words." },
       { property: "og:title", content: "Josiah Pueyo — Aspiring Copywriter" },
-      { property: "og:description", content: "Portfolio of Josiah Pueyo — beginner copywriter turning ideas into clear, compelling, and conversion-driven words." },
+      { property: "og:description", content: "Portfolio of Josiah Pueyo — Beginner copywriter turning ideas into clear, compelling, and conversion-driven words." },
     ],
   }),
   component: Index,
