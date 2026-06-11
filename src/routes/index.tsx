@@ -1,11 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-const project1 = { url: "/images/project-1.jpeg" };
-const project2 = { url: "/images/project-2.jpeg" };
-const project3 = { url: "/images/project-3.jpeg" };
-const epjPost = { url: "/images/epj-post.jpeg" };
-const thrift1 = { url: "/images/thrift-1.jpeg" };
-const thrift2 = { url: "/images/thrift-2.jpeg" };
+const project1 = { url: "/images/project-1.jpg" };
+const project2 = { url: "/images/project-2.jpg" };
+const project3 = { url: "/images/project-3.jpg" };
+const epjPost = { url: "/images/epj-post.jpg" };
+const thrift1 = { url: "/images/thrift-1.jpg" };
+const thrift2 = { url: "/images/thrift-2.jpg" };
 
 export const Route = createFileRoute("/")({
   head: () => ({
